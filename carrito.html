@@ -26,26 +26,42 @@
             </header>
             <nav>
                 <ul class="menu">
-                    <li><button id="todos" class="boton-menu boton-categoria active"><i class="bi bi-pc"></i> Todos los Productos</button></li>
-                    <li><button id="placasDeVideo" class="boton-menu boton-categoria"><i class="bi bi-pc-horizontal"></i> Placas de video</button></li>
-                    <li><button id="procesadores" class="boton-menu boton-categoria"><i class="bi bi-cpu"></i> Procesadores</button></li>
-                    <li><button id="perifericos" class="boton-menu boton-categoria"><i class="bi bi-mouse"></i> Perifericos</button></li>
-                    <li><a class="boton-menu carrito text-decoration-none" href="carrito.html"><i class="bi bi-cart2"></i>Carrito de compras<span id="contador" class="contador">0</span></a></li>
+                    <li><a class="carrito" href="index.html"><i class="bi bi-bag"></i> Volver a la tienda</a></li>
+                    <li><a class="carrito active" href="carrito.html"><i class="bi bi-cart2"></i> Carrito de compras</a></li>
                 </ul>
             </nav>
         </aside>
         <main>
-            <h1 id="tituloP" class="titulo">Todos los productos</h1>
-            <div id="Productos" class="productos">
-                
+            <h1 class="titulo">Carrito</h1>
+            <div class="productosCarritos">
+                <p id="carritoVacio" class="carritoVacio">El carrito esta vacio <i class="bi bi-cart-dash"></i></p>
+
+                <div id="carritoProductos" class="carritoProductos ocultar">
+                    
+                </div>
+
+                <div id="carritoBotones" class="carritoBotones ocultar">
+                    <div class="botonesIzquierda">
+                        <button class="vaciarCarrito">Vaciar carrito</button>
+                    </div>
+                    <div class="botonesDerecha">
+                        <div class="carritoTotal">
+                            <small>Total:</small>
+                            <p id="total">$320000</p>
+                        </div>
+                        <button class="comprarCarrito">Comprar</button>
+                    </div>
+                </div>
+                <footer><p class="textoFooter">© Todos los derechos reservados Capygames 2023</p></footer>
             </div>
         </main>
     </div>
-    
 
 
-    <footer><p class="textoFooter">© Todos los derechos reservados Capygames 2023</p></footer>
+
 </body>
 
+
+<script src="./JS/carrito.js"></script>
 <script src="./JS/main.js"></script>
 </html>

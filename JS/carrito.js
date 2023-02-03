@@ -13,8 +13,8 @@ if (contenedorproductosEnCarrito) {
 
     contenedorCarritoProductos.innerHTML = "";
 
-    productosEnCarrito.forEach(producto => {
-        
+    contenedorproductosEnCarrito.forEach(producto => {
+
         const div = document.createElement("div");
         div.classList.add("carritoProducto");
         div.innerHTML = `
@@ -30,6 +30,10 @@ if (contenedorproductosEnCarrito) {
                         <div class="productoPrecioCarrito">
                             <small>Precio:</small>
                             <h4>$${producto.precio}</h4>
+                        </div>
+                        <div class="productoSubtotal">
+                            <small>Subtotal</small>
+                            <h4>$${producto.precio * producto.cantidad}</h4>
                         </div>
                         <button class="eliminarProducto" id="${producto.id}"><i class="bi bi-trash3"></i></button>
     `;
